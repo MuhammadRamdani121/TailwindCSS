@@ -1,0 +1,24 @@
+{
+    "name": "portfolio_tailwindcss_mr",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "concurrently \"tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"live-server --host=192.168.1.14 --port=3000\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.18",
+        "tailwindcss": "^4.1.18"
+    },
+    "devDependencies": {
+        "concurrently": "^9.2.1",
+        "live-server": "^1.2.2",
+        "prettier": "^3.7.4",
+        "prettier-plugin-tailwindcss": "^0.7.2"
+    }
+}
