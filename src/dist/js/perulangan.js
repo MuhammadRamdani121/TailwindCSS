@@ -51,5 +51,39 @@ const studentRow = [
 
 for (let i = 0; i < studentRow.length; i++) {
   const row = studentRow[i];
-  console.log(row);
+  console.log(`seat Row #${i + 1}`);
+  for (let j = 0; j < row.length; j++) {
+    console.log(row[j]);
+  }
+}
+
+let num = 0;
+while (num < 10) {
+  console.log(num);
+  num++;
+}
+
+for (let num = 0; num < 10; num++) {
+  console.log(num);
+}
+
+const password = `Pass123`;
+
+let guess = prompt(`enter the password`);
+while (guess !== password) {
+  guess = prompt(`enter the password`);
+}
+alert("You got the password right!");
+
+let input = prompt(`hei, say something! `);
+
+while (true) {
+  input = promt(input);
+  if (input === `stop`) break;
+}
+alert(`ok`);
+
+for (let i = 0; i < 10000; i++) {
+  console.log(i);
+  if (i === 100) break;
 }
