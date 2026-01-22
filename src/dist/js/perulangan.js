@@ -56,7 +56,7 @@ for (let i = 0; i < studentRow.length; i++) {
     console.log(row[j]);
   }
 }
-
+//cara menggunakan perulangan while
 let num = 0;
 while (num < 10) {
   console.log(num);
@@ -87,3 +87,26 @@ for (let i = 0; i < 10000; i++) {
   console.log(i);
   if (i === 100) break;
 }
+
+//melakukan perulangan pada object for
+
+const studentScore = {
+  Olivia: 20,
+  eda: 1,
+  wong: 2,
+  ijah: 3,
+  Olivia: 5,
+  Olivia: 11,
+  Olivia: 12,
+};
+
+for (let student in studentScore) {
+  console.log(`${student}: memiliki skor ${studentScore[student]}`);
+}
+
+let total = 0;
+let scores = Object.values(studentScore);
+for (let score of scores) {
+  total += score;
+}
+console.log(total / scores.length);
