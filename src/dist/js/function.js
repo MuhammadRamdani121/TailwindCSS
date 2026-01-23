@@ -47,3 +47,27 @@ const pangkat1 = function (nilai, pembanding) {
   return nilai * pembanding;
 };
 perpangkatan(1, 2);
+
+// keyword this
+const saya = {
+  nama: `ramdani`,
+  hobi: `coding`,
+  kenalan: function () {
+    return `saya ${this.nama} hobi ${this.hobi}`;
+  },
+};
+
+saya.kenalan();
+saya.nama = `denden`;
+saya.kenalan();
+
+// try and catch
+
+function teriak(msg) {
+  try {
+    console.log(msg.toUpperCase());
+  } catch (error) {
+    console.log(error);
+    console.log(`silahkan masukan tipe data string argument teriak()`);
+  }
+}
