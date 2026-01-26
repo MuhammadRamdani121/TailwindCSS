@@ -8,6 +8,11 @@ angka.forEach(function (el) {
   }
 });
 
+// memilih data tertentu didalam array dengan filter method
+const angkaGanjil = angka.filter((n) => {
+  return n % 2 === 1;
+});
+
 const animes = [
   {
     title: `Attack on Titan`,
