@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
     <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
-  <body class="h-screen">
+  <body>
     <!-- Header start -->
     <header
-      class="flex items-center justify-between rounded-b-md bg-white px-6"
+      class="flex h-10 items-center justify-between bg-[#A5C89E] px-6 text-white md:rounded-b-md"
     >
-      <h1>MR</h1>
-      <!-- header start Mobile device -->
-      <nav class="flex gap-4">
+      <h1 class="text-xl">MR</h1>
+      <!-- header start dekstop -->
+      <nav class="text-md flex hidden gap-6 md:block">
         <a href="src/dist/Tailwind_Template.html">Template Tailwind</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </nav>
+      <!-- header end desktop -->
 
+      <!-- header start Mobile device -->
+      <ion-icon name="menu-outline" class="text-4xl md:hidden"></ion-icon>
       <!-- header end mobile device  -->
     </header>
     <!-- header end -->
+
     <!-- main start -->
     <main>
       <!-- section 1 start -->
       <section
-        class="flex h-[500px] w-auto flex-col items-center justify-center gap-2 bg-amber-200 md:flex-row md:justify-evenly"
+        class="flex h-screen w-auto flex-col items-center justify-center gap-2 bg-[#FFFBB1] md:h-screen md:flex-row md:justify-evenly"
       >
         <img
-          class="h-[250px] w-[250px] rounded-full bg-white object-cover object-[50%_15%] md:h-[300px] md:w-[300px]"
+          class="h-50 w-50 rounded-full bg-white object-cover object-[50%_15%] md:h-75 md:w-75"
           src=" src/img/Profile.png "
           alt=" "
         />
@@ -48,136 +60,141 @@
 
       <!-- Section 2 start -->
       <section
-        class="flex h-[500px] flex-col bg-amber-400 md:flex-row md:items-center md:justify-around md:px-6"
+        class="flex h-screen flex-col bg-[#D8E983] md:h-screen md:items-center md:justify-around"
       >
         <h1
-          class="absolute right-[50%] left-[40%] w-[100px] text-center md:bottom-[100px] md:left-[48%]"
+          class="w-full self-start bg-[#AEB877] py-1 text-center text-2xl font-bold underline"
         >
           Tentang Saya
         </h1>
-        <div class="relative md:w-1/2">
-          <p class="px-6 pt-10 text-justify indent-4">
-            Saya, Muhammad Ramdani adalah lulusan baru yang penuh semangat dan
-            siap untuk membawa energi positif ke dunia profesional. Dengan latar
-            belakang pendidikan dalam teknik informatika, saya telah mendapatkan
-            pemahaman yang kuat tentang ilmu komputer dan keterampilan praktis
-            yang diperlukan untuk berkembang di dunia kerja.
-          </p>
-        </div>
-
-        <div class="flex flex-col md:w-1/2">
-          <h1 class="text-center">Klik Me!</h1>
-          <div
-            class="flex flex-row flex-wrap justify-center gap-2 px-5 pt-2 md:flex-wrap md:justify-center"
-          >
-            <a
-              href=""
-              class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
-            >
-              Lorem, ipsum
-            </a>
-            <a
-              href=""
-              class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
-            >
-              Lorem, ipsum.
-            </a>
-            <a
-              href=""
-              class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
-            >
-              Lorem, ipsum.
-            </a>
-            <a
-              href=""
-              class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
-              >Lorem, ipsum.
-            </a>
-            <a
-              href=""
-              class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
-              >Lorem, ipsum.
-            </a>
-            <a
-              href=""
-              class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
-              >Lorem, ipsum.
-            </a>
+        <nav
+          class="flex h-full flex-col items-center justify-evenly md:flex-row md:px-6"
+        >
+          <div class="md:w-1/2">
+            <p class="px-8 pt-10 text-justify indent-4 hyphens-auto">
+              Saya, Muhammad Ramdani adalah lulusan baru yang penuh semangat dan
+              siap untuk membawa energi positif ke dunia profesional. Dengan
+              latar belakang pendidikan dalam teknik informatika, saya telah
+              mendapatkan pemahaman yang kuat tentang ilmu komputer dan
+              keterampilan praktis yang diperlukan untuk berkembang di dunia
+              kerja.
+            </p>
           </div>
-        </div>
+
+          <div
+            class="mx-6 mt-4 flex h-auto flex-col rounded-4xl bg-[#AEB877] md:w-1/2"
+          >
+            <h1 class="mx-auto mt-2 text-center font-bold text-black">
+              Klik Me!
+            </h1>
+            <div
+              class="my-3 flex h-auto flex-row flex-wrap justify-center gap-2 px-5 md:flex-wrap md:justify-center"
+            >
+              <a
+                href=""
+                class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
+              >
+                Pendidikan
+              </a>
+              <a
+                href=""
+                class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
+              >
+                Pengalaman Kerja
+              </a>
+              <a
+                href=""
+                class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
+              >
+                Project Latihan
+              </a>
+              <a
+                href=""
+                class="h-[40px] w-[140px] rounded-xl bg-amber-50 pt-2 text-center md:w-[150px] lg:w-[140px]"
+                >Hubungi Saya
+              </a>
+            </div>
+          </div>
+        </nav>
       </section>
       <!-- Section 2 end -->
 
       <!-- Section 3 start -->
-      <section>
-        <h1 class="text-center">Pendidikan</h1>
-        <div
-          class="grid h-auto grid-cols-1 bg-amber-700 lg:grid-cols-4 lg:grid-rows-3"
-        >
-          <nav
-            class="mx-6 mt-6 flex flex-col items-center border-2 bg-white px-6 indent-4 lg:col-span-2 lg:col-start-2"
-          >
+
+      <section class="bg-[#FFFBB1]">
+        <h1 class="text-center text-2xl font-bold uppercase">Pendidikan</h1>
+        <article class="relative grid grid-cols-2 items-center justify-center">
+          <nav class="col-span-1 mr-2 border-r-3 py-10">
             <img
-              class="h-[180px] w-[300px] object-contain"
+              class="mx-auto h-30 w-30 object-contain"
               src="src/img/KULIAH.png"
               alt=""
             />
-            <h1>
-              2020-2024 | Universitas Pamulang | Program Studi Teknik
-              Informatika
-            </h1>
-            <p class="text-justify">
-              Jurusan ini mempersiapkan mahasiswa untuk memiliki kemampuan dalam
-              mengelola berbagai aspek dunia teknologi komputer, seperti
-              pengelolaan database sql server,mysql, aplikasi berbasis web,
-              aplikasi dekstop, aplikasi android, peluang bisnis dan Artificial
-              Intelligence (AI).
-            </p>
           </nav>
           <nav
-            class="mx-6 mt-6 flex flex-col items-center border-2 bg-white px-6 indent-4 lg:col-span-2 lg:col-start-2"
+            class="absolute left-56 h-3 w-3 rounded-full bg-black md:hidden"
+          ></nav>
+          <nav class="col-span-1 mx-auto text-center">
+            <h1>2020-2024</h1>
+            <h1>Universitas Pamulang</h1>
+            <h1>Program Studi Teknik Informatika</h1>
+          </nav>
+        </article>
+
+        <article class="relative grid grid-cols-2 items-center justify-center">
+          <nav
+            class="col-span-1 -ml-[11px] border-r-3 py-10 md:order-1 md:border-r-0 md:border-l-3"
           >
             <img
-              class="h-[180px] w-[300px] object-contain"
+              class="mx-auto h-30 w-30 object-contain"
               src="src/img/SMK.png"
               alt=""
             />
-            <h1>
-              2017-2020 | SMK Letris Indonesia 2 | Jurusan Rekayasa Perangkat
-              Lunak (RPL)
-            </h1>
-            <p class="text-justify">
-              Jurusan ini mempersiapkan siswa untuk memiliki kemampuan dalam
-              mengelola berbagai aspek dunia komputer, seperti latihan logika
-              ,pengelolaan database mysql dan membuat aplikasi berbasis web.
-            </p>
           </nav>
           <nav
-            class="mx-6 mt-6 flex flex-col items-center border-2 bg-white px-6 indent-4 lg:col-span-2 lg:col-start-3"
-          >
+            class="absolute left-56 h-3 w-3 rounded-full bg-black md:hidden"
+          ></nav>
+
+          <nav class="col-span-1 mx-auto text-center">
+            <h1>2017-2020</h1>
+            <h1>SMK Letris Indonesia 2</h1>
+            <h1>Jurusan Rekayasa Perangkat Lunak (RPL)</h1>
+          </nav>
+        </article>
+        <article class="relative grid grid-cols-2 items-center justify-center">
+          <nav class="col-span-1 mr-2 border-r-3 py-10">
             <img
-              class="h-[180px] w-[300px] object-contain"
+              class="mx-auto h-30 w-30 object-contain"
               src="src/img/SMP.png"
               alt=""
             />
-            <h1>2014-2017 | SMP ISLAM AT-TAQWA</h1>
-            <p class="text-justify">
-              Menempuh pendidikan menengah pertama dengan fokus pada mata
-              pelajaran umum dan pembentukan karakter.
-            </p>
           </nav>
           <nav
-            class="mx-6 mt-6 flex flex-col items-center border-2 bg-white px-6 indent-4 lg:col-span-2 lg:col-start-1 lg:row-start-3"
-          >
+            class="absolute left-56 h-3 w-3 rounded-full bg-black md:hidden"
+          ></nav>
+          <nav class="col-span-1 mx-auto text-center">
+            <h1>2014-2017</h1>
+            <p>SMPI AT-TAQWA</p>
+            <h1>Sekolah Pendidikan Menengah Pertama (SMP).</h1>
+          </nav>
+        </article>
+        <article class="relative grid grid-cols-2 items-center justify-center">
+          <nav class="col-span-1 mr-2 border-r-3 py-10">
             <img
-              class="h-[180px] w-[300px] object-contain"
+              class="mx-auto h-30 w-30 object-contain"
               src="src/img/SD.png"
               alt=""
             />
-            <h1>2008-2014 | SDN SERUA 01</h1>
-            <p class="text-justify">Sekolah Dasar.</p>
           </nav>
-        </div>
+          <nav
+            class="absolute left-56 h-3 w-3 rounded-full bg-black md:hidden"
+          ></nav>
+          <nav class="col-span-1 mx-auto text-center">
+            <h1>2008-2014</h1>
+            <h1>SDN SERUA 01</h1>
+            <h1>Sekolah Dasar.</h1>
+          </nav>
+        </article>
       </section>
       <!-- Section 3 End -->
 
@@ -309,7 +326,7 @@
 
       <!-- Section 6 Start -->
       <section class="mt-6 px-4">
-        <h1 class="mb-6 text-center text-2xl font-semibold">Hubungi Kami</h1>
+        <h1 class="mb-6 text-center text-2xl font-semibold">Hubungi Saya</h1>
 
         <div
           class="flex flex-col items-center gap-6 md:flex-row md:items-center md:justify-around"
